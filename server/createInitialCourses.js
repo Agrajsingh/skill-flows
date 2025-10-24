@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Course = require('./models/Course');
 require('dotenv').config();
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://yashdhanraj9140:BOnHEMWDni2z7Xux@cluster0.ntzrtx3.mongodb.net/';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/skillflows';
 
 const initialCourses = [
   {
