@@ -1,7 +1,8 @@
 [build]
-  publish = "client/build"
+  base = "client"
+  publish = "build"
   command = "npm run build"
-  install = "npm install && npm run install-client"
+  install = "npm install"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -15,4 +16,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
