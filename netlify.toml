@@ -1,6 +1,7 @@
 [build]
   publish = "client/build"
   command = "npm run build"
+  install = "npm install && npm run install-client"
 
 [build.environment]
   NODE_VERSION = "18"
